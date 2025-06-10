@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #0000009c;
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.game-container {
+    text-align: center;
+    background-color: #24202069;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 0, 255);
+    margin-top: 0;
+    color: #FF10F0;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+    
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.cell:hover {
+    background-color: #e2d9d9a9;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.restart, .toggle-mode {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ffd5;
+    color: #000000;
+    transition: background-color 0.3s;
+}
+
+.restart:hover, .toggle-mode:hover {
+    background-color: #ffffff;
+}
